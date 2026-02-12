@@ -1,42 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KTU Login | APJ Abdul Kalam Technological University</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>KTU e-Governance Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-  <main class="container">
-    <div class="login-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/APJ_Abdul_Kalam_Technological_University_logo.png"
-           alt="KTU Logo" class="logo">
+<!-- Header -->
+<header>
+    <div class="logo-section">
+        <h1>APJ Abdul Kalam Technological University</h1>
+        <p>e-Governance Portal</p>
+    </div>
+</header>
 
-      <h1>KTU Student Portal</h1>
-      <p class="subtitle">Login to continue</p>
+<!-- Hero Section -->
+<section class="hero">
 
-      <form>
-        <label for="regno">Register Number</label>
-        <input type="text" id="regno" placeholder="e.g. KTU20EEE001" required>
+    <div class="overlay"></div>
 
-        <label for="password">Password</label>
-        <div class="password-box">
-          <input type="password" id="password" placeholder="Enter password" required>
-          <span onclick="togglePassword()">👁</span>
+    <div class="hero-content">
+
+        <!-- About Section -->
+        <div class="about">
+            <h2>About the University</h2>
+            <p>
+                APJ Abdul Kalam Technological University (KTU) was established by the Government of Kerala 
+                to advance professional education and academic excellence. The university focuses on 
+                improving quality in engineering, technology and management education across the state.
+            </p>
+
+            <ul>
+                <li>✔ Student Academic Services</li>
+                <li>✔ Institution Management Portal</li>
+                <li>✔ University Administration Access</li>
+            </ul>
         </div>
 
-        <button type="button" onclick="showLoading()">Login</button>
+        <!-- Login Section -->
+        <div class="login-box">
+            <h3>Sign In</h3>
 
-        <p class="forgot">Forgot password?</p>
-      </form>
+            <form id="loginForm">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" required>
 
-      <div class="note">
-        <p>Frontend-only UI redesign • No real authentication</p>
-      </div>
+                <label>Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <span id="togglePassword">👁</span>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Remember Me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
     </div>
-  </main>
+</section>
 
-  <script src="script.js"></script>
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p><strong>Contact Us</strong></p>
+        <p>Email: support@ktu.edu.in</p>
+        <p>Phone: +91 471 270 0000</p>
+        <p>© 2026 APJ Abdul Kalam Technological University</p>
+    </div>
+</footer>
+
 </body>
 </html>
