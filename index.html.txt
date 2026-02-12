@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KTU Login | APJ Abdul Kalam Technological University</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <div class="login-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/7b/APJ_Abdul_Kalam_Technological_University_logo.png"
+           alt="KTU Logo" class="logo">
+
+      <h1>KTU Student Portal</h1>
+      <p class="subtitle">Login to continue</p>
+
+      <form>
+        <label for="regno">Register Number</label>
+        <input type="text" id="regno" placeholder="e.g. KTU20EEE001" required>
+
+        <label for="password">Password</label>
+        <div class="password-box">
+          <input type="password" id="password" placeholder="Enter password" required>
+          <span onclick="togglePassword()">👁</span>
+        </div>
+
+        <button type="button" onclick="showLoading()">Login</button>
+
+        <p class="forgot">Forgot password?</p>
+      </form>
+
+      <div class="note">
+        <p>Frontend-only UI redesign • No real authentication</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
